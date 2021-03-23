@@ -1,5 +1,5 @@
 # DRAW_SIMPLE
-###Very easy, simple software for creating drawings, generated in HTML Canvas.
+Very easy, simple software for creating drawings, generated in HTML Canvas.
 
 # Instructions
 ## Shortcuts
@@ -44,7 +44,6 @@ v2.0 is first public version of the app.
 I think the project can be extended in the future as i have ideas for new features.
 The target is to create software with many features, yet very easy to use because of keyboard binds and clear, basic interface
 
-I'm glad to discuss every problems with app;
 I'm also open for every suggestion. 
 
 # CREDITS
