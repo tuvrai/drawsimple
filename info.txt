@@ -1,0 +1,46 @@
+=== DRAW_SIMPLE ===
+
+= Version =
+Latest stable version: v1.7.0 (14-12-2018)
+
+= CHANGE LOGS =
+*15-12-18
+	#NEW
+		*elipses - now default usage of circle tool makes elipse; to make circle hold ctrl.
+		*ctrl handling - allows to make 'blocked' shapes (equilateral triangle, square, circle) and lines per 45 degrees.
+	#CHANGES
+		*now you can change path's width while drawing it using wheel.
+		*color picker console log now displays hex value of picked color.
+*14-12-18
+   *1.7.0 RELEASED
+
+
+= INSTRUCTIONS =
+*ESC - breaks current drawing (before putting it onto canvas)
+*SHIFT - when held, it inverts colors
+*CTRL - when held, it blocks shape drawing
+*mousewheel - increases/decreases drawing width (except while holding ctrl to allow website size change)
+*RMB
+	- figures (square,triangle,circle) - draws with secondary color background
+	- pencil, line - inverts color
+
+
+#Color picker - LMB - changes first color, RMB - second color; background is ignored (it should return black (#000000) color)
+#Downloading image - background is ignored, as preffered extension is PNG it should be transparent.
+
+== FUTURE ==
+I think the project can be extended in the future as i have ideas for new features.
+The target is to create software with many features, yet in a very simple interface, strongly using keyboard.
+
+== TODO ==
+	#BUGS TO FIX
+		*At normal drawing, while holding button you mouseout from canvas and come back holding the button whole time, the 'unexpected' line is drawn
+	#FEATURES
+		*Elipses aren't perfectly rounded.
+
+= CREDITS =
+Author: Tuvrai44
+Also: Marcin Domański (kursjs.pl) - inventions of (http://kursjs.pl/kurs/canvas/canvas-paint.php) are used in software
+
+Icons of features via: https://material.io/tools
+

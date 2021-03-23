@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Draw_simple v2.0</title>
+	<link rel = "stylesheet" type = "text/css" href = "app_style.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" crossorigin="anonymous">
+</head>
+<body>
+	<div id = "draw_app">
+		<div id = "draw_app_menu">
+			<ul id = "toolbar">
+				<li>draw_simple</li>
+				<li>v2.0</li>
+				<li id = "about"><a href = "https://bitbucket.org/tuvrai/draw_simple/src/master/">About</a></li>
+			</ul>
+			<ul id = "upperfunctionlist">
+				<li><input type = "color" value = '#eeffff' id = "color_first" class = "draw_settings" value = "#ff2211" style = "height: 40px;width:40px;"></li>
+
+				<li><input type = "color" value = '#eeffff' id = "color_second" class = "draw_settings"  value = "#ffffff" 	style = "height: 40px;width:40px;"></li>
+				<li id = "colorswitch"><i class="material-icons" style = "font-size:1.45rem;">cached</i></li>
+				<li class = "undoredo" id = "undo"><i class="material-icons">undo</i></li>
+				<li class = "undoredo" id = "redo"><i class="material-icons">redo</i></li>
+			</ul>
+			<ul id = "functionlist">
+				<li id = "changebackgroundcolor" ><input type = "color" value = '#eeeeee' id = "color_bg" class = "draw_settings" style = "width: 88px;"></li>
+				<li id = "changedrawingwidth">
+					<input type = "range" min = "1" max = "300" value = "5" id = "getwidth"  class = "draw_settings">
+				</li>
+				<li style = "width: 50px;font-size: 30px;"><output id = "widthValue" class="paint-size-val">5</output></li>
+				<li id = "draw" class = "draw_functions"><i class="material-icons">create</i></li>
+				<li id = "erase" class = "draw_functions"><i class="material-icons">clear</i></li>
+				<li id = "line" class = "draw_functions"><i class="material-icons">clear_all</i></li>
+				<li id = "square" class = "draw_functions"><i class="material-icons">crop_din</i></li>
+				<li id = "triangle" class = "draw_functions"><i class="material-icons">details</i></li> 
+				<li id = "circle" class = "draw_functions"><i class="material-icons">panorama_fish_eye</i></li> 
+				<!--<li id = "text" class = "draw_functions"><i class="material-icons">text_fields</i></li>  TODO -->
+				<li id = "colortake" class = "draw_functions"><i class="material-icons">colorize</i></li>
+				<li id = "download"><a id = "downloadimage"><i class = "material-icons">save</i></a></li>
+			</ul>
+		</div>
+		<div id = "draw_app_canvas"></div>
+	</div>
+	<script src = "simplepixel.js"></script>
+	<script src = "draw_simple.js"></script>
+	<script type="text/javascript">
+		document.addEventListener('DOMContentLoaded',drawApp.run());
+	</script>
+</body>
+</html>
